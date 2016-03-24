@@ -91,10 +91,10 @@ local function bot_stats()
   return text
 end
 local function run(msg, matches)
-  if matches[1]:lower() == 'sbss' then -- Put everything you like :)
+  if matches[1]:lower() == 'bot' then -- Put everything you like :)
     local about = _config.about_text
     local name = user_print_name(msg.from)
-    savelog(msg.to.id, name.." ["..msg.from.id.."] used /sbss ")
+    savelog(msg.to.id, name.." ["..msg.from.id.."] used /bot ")
     return about
   end 
   if matches[1]:lower() == "لیست آمار" or matches[1]:lower() == "statslist" then
@@ -120,7 +120,7 @@ local function run(msg, matches)
         return
       end
     end
-    if matches[2] == "sbss" then -- Put everything you like :)
+    if matches[2] == "bot" then -- Put everything you like :)
       if not is_admin(msg) then
         return "فقط برای ادمین ها !"
       else
@@ -141,16 +141,16 @@ return {
     "^(آمار)$",
     "^(لیست آمار)$",
     "^(آمار) (گروه) (%d+)",
-    "^(آمار) (sbss)",
+    "^(آمار) (bot)",
     "^(stats)$",
     "^(statslist)$",
     "^(stats) (group) (%d+)",
-    "^(stats) (sbss)",
+    "^(stats) (bot)",
     "^[!/#](stats)$",
     "^[!/#](statslist)$",
     "^[!/#](stats) (group) (%d+)",
-    "^[!/#](stats) (sbss)",
-	"^[!/#]([Ss]bss)$"
+    "^[!/#](stats) (bot)",
+	"^[!/#]([Ss]bssmledles)$"
     }, 
   run = run
 }
