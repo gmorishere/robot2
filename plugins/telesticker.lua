@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-send_document(get_receiver(msg), "/root/robot/gameone1.webp", ok_cb, false)
+send_document(get_receiver(msg), "/root/robot/gameone11.webp", ok_cb, false)
 end
 
 return {
