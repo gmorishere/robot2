@@ -13,9 +13,9 @@ local function run(msg, matches)
       return "You are Group Owner"
     elseif is_momod(msg) then
     send_document(get_receiver(msg), "/root/robot/mod.webp", ok_cb, false)
-      return "You are Group Mod"
+      return "You are Group Moderator"
     else
-    send_document(get_receiver(msg), "/root/robot/mmbr.webp", ok_cb, false)
+    send_document(get_receiver(msg), "/root/robot/member.webp", ok_cb, false)
       return "You are Group Member"
     end
   end
