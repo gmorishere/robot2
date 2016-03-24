@@ -1,13 +1,14 @@
 do
 
 function run(msg, matches)
-send_document(get_receiver(msg), "/root/robot/sticker.webp", ok_cb, false)
+send_document(get_receiver(msg), "/root/robot/gameone1.webp", ok_cb, false)
 end
 
 return {
 patterns = {
-"^[Ss][Bb][Ss][Ss]$",
-"^[!/][Ss]bss$",
+"^[Gg][Aa][Mm][Ee][Oo][Nn][Ee]$",
+"^[Gg][Aa][Mm][Ee][Oo][Nn][Ee][Cc][Hh]$",
+
 
 },
 run = run
